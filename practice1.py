@@ -1,0 +1,37 @@
+# # Python program to check if the number is an Armstrong number or not
+#
+# # take input from the user
+# num = int(input())
+#
+# # initialize sum
+# sum = 0
+#
+# # find the sum of the cube of each digit
+# temp = num
+# while temp > 0:
+#     digit = temp % 10
+#     sum += digit ** 3
+#     temp //= 10
+#
+# # display the result
+# if num == sum:
+#     print("True")
+# else:
+#     print("False")
+
+
+# separation by a special character
+
+test_str = input()
+
+K = '#'
+
+# Alternate character addition
+# Using loop
+res = ''
+for ele in test_str:
+    res += ele + K
+res = res[:-1]
+
+# printing result
+print(res)
